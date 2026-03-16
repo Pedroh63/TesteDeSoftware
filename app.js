@@ -44,3 +44,4 @@ sequelize.sync({ alter: true })
   .catch(err => console.error('Erro ao sincronizar banco:', err));
 
 module.exports = app;
+console.log("rodando");
