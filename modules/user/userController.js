@@ -1,6 +1,9 @@
 const User = require('./userModel');
 const bcrypt = require('bcryptjs');
 
+const { validateRegister } = require('./userValidation');
+const { validateLogin } = require('./authValidation');
+
 exports.register = async (req, res) => {
     const{ username, email, password, confirmPassword, fullname } = req.body;
     try {
